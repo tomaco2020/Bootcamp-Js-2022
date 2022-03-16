@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var noValgoNi5 = 4;
+        console.log(noValgoNi5);
+
+        var miAnioDeNacimiento = 1981;
+        var meGustariaTener80Anios = 80;
+        var voyATener80ElAnio = miAnioDeNacimiento + meGustariaTener80Anios;
+        console.log('Mi año de nacimiento: ', miAnioDeNacimiento);
+        console.log('Voy a tener ',meGustariaTener80Anios, ' años en el año ', voyATener80ElAnio);
+
+        var costoDeUnaTele = 10000;
+        var ahorros = 9000;
+        var dineroQueMeFalta = costoDeUnaTele - ahorros;
+        console.log('El tele cuesta $', costoDeUnaTele, ' tengo de ahorro $', ahorros, ' me falta $', dineroQueMeFalta);
+
+        var diasPorAnio = 365;
+        var cantidadDeAniosEnUnaDecada = 10;
+        var cantidadDeDiasEnUnaDecada = diasPorAnio * cantidadDeAniosEnUnaDecada;
+        console.log('Cantidad de días en una decada: ', cantidadDeDiasEnUnaDecada);
+
+        var porcionesPizza = 8;
+        var porcionesEnTotal = 24;
+        var cantidadPizzas = porcionesEnTotal / porcionesPizza;
+        console.log('Hay en la Mesa ', cantidadPizzas, ' pizzas');
+
+        var miAnimalFavorito = 'gato';
+        var animalComparado = 'perro';
+        console.log(' mi aninal favorito es un Perro? ', miAnimalFavorito == animalComparado);
+
+        console.log('flan es distinto a flan con dulce de leche ? ', ('flan' != 'Flan con dulce de leche'));
+
+        const edad = 40;
+        var soyMayorDeEdad = (edad > 17);
+        console.log('soy mayor de edad ', soyMayorDeEdad, ' tengo ', edad, ' años');
+
+        var soyMenorDe25 = (edad < 25);
+        console.log('soy menor de 25 años ', soyMenorDe25, ' tengo ', edad, ' años');
+
+        var mesActualNum = new Date().getMonth();
+        if (mesActualNum == 2){
+            var mesActual = 'Marzo';           
+        }
+        var estamosEnEnero = (mesActual === 'Enero');
+        console.log('Estamos en Enero ', estamosEnEnero);
+
+        var noEstamosEnEnero = (mesActual !== 'Enero');
+        console.log('No estamos en Enero ', noEstamosEnEnero);
+
+        var miNotaEnElParcial = 8;        
+        console.log('Mi nota: ', miNotaEnElParcial);
+        var notaMinimaParaAprobar = 6;
+        console.log('Nota minima para aprobar : ', notaMinimaParaAprobar);
+        var estoyAprobado = (miNotaEnElParcial >= notaMinimaParaAprobar);
+        console.log('Estoy Aprobado ', estoyAprobado);
+
+        var horaActual = new Date().getHours();
+        console.log('La hora actual es: ', horaActual);
+        var esHoraDeAlmorzar = (horaActual <= 12);
+        console.log('es hora de almorzar ', esHoraDeAlmorzar);
+
+    </script>
+</body>
+</html>
