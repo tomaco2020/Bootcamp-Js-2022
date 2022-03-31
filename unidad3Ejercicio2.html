@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const base = 10;
+        const altura = 5;
+        const supRectangulo = base * altura;
+        console.log('La superficie del rectangulo de ', base, 'x', altura, ' es: ' , supRectangulo);
+
+        
+        const constante = 2;
+        const supTriangulo = supRectangulo / 2;
+        console.log('La superficie del triangulo de ', base, 'x', altura, ' es: ' , supTriangulo);
+
+        const diametro = 10;
+        const radio = diametro / 2;
+        const pi = 3.14;
+        const supCirculo = pi * Math.pow(radio , 2);
+        console.log('La superficie del circulo de diametro ', diametro, 'es: ', supCirculo);
+
+        console.log('Variables Numericas');
+        var num1 = 10;
+        var num2 = 15;
+        var num3 = 20;
+        const producto = num1 * num2 * num3;
+        const suma = num1 + num2 + num3;
+        const promedio = suma / 3;
+        console.log('El producto de ', num1, '*', num2, '*', num3, ' es ', producto);
+        console.log('La suma de ', num1, '+', num2, '+', num3, ' es ', suma);
+        console.log('El promedio de ', num1, ' ', num2, ' ', num3, ' es ', promedio);
+
+        console.log('Tienda de Compras');
+        const bebidas = 100;
+        const pan = 50;
+        const carne = 500;
+        const perfume = 1000;
+        const pastas = 300;
+        const descuento = 0.15;
+        console.log('bebidas $', bebidas);
+        console.log('pan     $', pan);
+        console.log('carne   $', carne);
+        console.log('perfume $', perfume);
+        console.log('pastas  $', pastas);
+        const subTotal = bebidas + pan + carne + perfume + pastas;
+        console.log('Subtotal $', subTotal);
+        const totalDescuento = subTotal * descuento;
+        const total = subTotal -  totalDescuento;
+        console.log('descuento $', totalDescuento);
+        console.log('Total a pagar $ ', total);
+
+        
+        console.log('Casa de Cambio');
+        var pesos;
+        var dolarBN;
+        var dolarBlue;
+
+        pesos = prompt('Ingrese cantidad de $ a cambiar: ');
+        dolarBN = prompt('Ingrese tipo de cambio dolar Banco Nacion: ');
+        dolarBlue = prompt('Ingrese tipo de cambio dolar Blue: ');
+
+        cambioBN = pesos/dolarBN ;
+        cambioBlue = pesos/dolarBlue;
+
+        console.log(`dolar Banco Nacion u$: ${cambioBN}` );
+        console.log(`dolar Blue u$: ${cambioBlue}` );
+
+        console.log('Calculo del IVA 21%');
+        const ivaNeto = 1.21;
+        const porcentajeIva = 0.21;
+        
+        const totalFactura = 10000;
+        console.log('El total de la factura de compra es $: ', totalFactura);
+        const totalNeto = totalFactura/1.21;
+        const IVA = totalNeto*0.21;
+        console.log('El IVA 21% es $: ', IVA);
+
+
+
+
+    </script>
+</body>
+</html>
